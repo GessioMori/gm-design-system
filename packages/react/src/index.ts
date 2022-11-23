@@ -1,3 +1,3 @@
-import { colors } from "@gm-ds/tokens";
+import { colors } from '@gm-ds/tokens'
 
-console.log(colors);
+console.log(colors)
