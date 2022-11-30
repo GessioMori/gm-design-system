@@ -1,13 +1,31 @@
-import { colors } from '@gm-ds/tokens'
+import type { ComponentProps } from 'react'
 import { styled } from './styles'
 
-const Button = styled('button', {
+export const Button = styled('button', {
   fontFamily: '$default',
   backgroundColor: '$green700',
-  borderRadius: '$md',
+  borderRadius: '$sm',
   height: '$10',
+  border: 0,
+  fontWeight: 'bold',
+  color: '$white',
+
+  variants: {
+    size: {
+      small: {
+        fontSize: 14,
+        padding: '$2 $4',
+      },
+      large: {
+        fontSize: 16,
+        padding: '$3 $6',
+      },
+    },
+  },
+
+  defaultVariants: {
+    size: 'small',
+  },
 })
 
-export function App() {
-  return <h1 style={{ color: colors.gray800 }}>Hello World</h1>
-}
+export type ButtonProps = ComponentProps<typeof Button>
