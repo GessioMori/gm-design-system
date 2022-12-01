@@ -27,9 +27,11 @@
     "vite": "^3.2.4"
   },
   "dependencies": {
-    "@gm-ds/react": "*",
     "@gm-ds/eslint-config": "*",
+    "@gm-ds/react": "*",
     "@gm-ds/tokens": "*",
+    "@gm-ds/ts-config": "*",
+    "polished": "^4.2.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   }
